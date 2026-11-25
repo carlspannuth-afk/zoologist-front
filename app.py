@@ -1,7 +1,6 @@
 import streamlit as st
 
 
-
 st.markdown("""
 
 # First Page
@@ -12,8 +11,8 @@ st.markdown("""
 
 
 island = st.text_input('island:')
-bill_length_mm = st.text_input('bill_length_mm:')
-bill_depth_mm = st.text_input('bill_depth_mm:')
-flipper_length_mm = st.text_input('flipper_depth_mm:')
-body_mass_g = st.text_input('body_mass_g:')
+bill_length_mm = st.number_input('bill_length_mm:')
+bill_depth_mm = st.number_input('bill_depth_mm:')
+flipper_length_mm = st.number_input('flipper_depth_mm:')
+body_mass_g = st.number_input('body_mass_g:')
 sex = st.text_input('sex:')
