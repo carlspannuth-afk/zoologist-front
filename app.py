@@ -1,6 +1,8 @@
 import streamlit as st
 import requests
 
+api_url = st.secrets['API_URL']
+
 st.markdown("""
 
 # First Page
@@ -28,6 +30,6 @@ if st.button('PREDICT'):
     'sex': sex
     }
 
-    response = requests.get('http://localhost:8080/predict',params=var)
+    response = requests.get(api_url ,params=var)
     result = response.json()
     st.write(result['prediction'])
